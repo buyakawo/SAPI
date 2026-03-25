@@ -5,7 +5,7 @@ const authRouter = Router();
 
 authRouter.post('/sign-up', signUp);
 authRouter.post('/sign-in', signIn );
-authRouter.post('/sign-out',);
+authRouter.post('/sign-out'); // JWT is stateless, so we handle singout on client side
 
 
 export default authRouter;
